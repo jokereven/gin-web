@@ -1,4 +1,4 @@
-module github.com/zjing/gin_web
+module github.com/jokereven125/gin_web
 
 go 1.16
 
