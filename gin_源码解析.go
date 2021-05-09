@@ -19,7 +19,7 @@ func func2(c *gin.Context) {
 	}
 }
 func func3(c *gin.Context) {
-	c.Next() //先执行吓一跳链路
+	c.Next() //先执行吓一条链路
 	fmt.Println("星期三")
 }
 func func4(c *gin.Context) {
@@ -35,7 +35,7 @@ func func6(c *gin.Context) {
 	fmt.Println("星期天")
 }
 
-func main() {
+func Gin_source() {
 	r := gin.Default()
 
 	r.GET("/joker", func(c *gin.Context) {})
