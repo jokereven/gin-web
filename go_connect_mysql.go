@@ -47,7 +47,7 @@ func initDB() (err error) {
 	return
 }
 
-func main() {
+func main_connect() {
 
 	/*
 		// DSN:Data Source Name
