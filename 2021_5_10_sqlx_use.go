@@ -161,7 +161,7 @@ func namedQuery() {
 	}
 }
 
-func main() {
+func main_sql_use() {
 	if err := initDBsqlxuse(); err != nil {
 		fmt.Println(err)
 		return
