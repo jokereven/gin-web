@@ -94,7 +94,7 @@ func transactionDemo() {
 	fmt.Println("exec trans success!")
 }
 
-func main() {
+func main_acid() {
 	if err := initDBMYSQLACID(); err != nil {
 		fmt.Printf("connect to the db failed, err:%v", err)
 	}
