@@ -101,6 +101,66 @@ func deleteRowDemosqlx() {
 	fmt.Printf("delete success, affected rows:%d\n", n)
 }
 
+/*
+	NamedExec
+DB.NamedExec方法用来绑定SQL语句与结构体或map中的同名字段。
+*/
+
+func insertUserDemo() (err error) {
+	sqlStr := "INSERT INTO user (name,age) VALUES (:name,:age)"
+	_, err = dbsqlxuse.NamedExec(sqlStr,
+		map[string]interface{}{
+			"name": "我爱罗",
+			"age":  28,
+		})
+	return
+}
+
+/*
+	NamedQuery
+与DB.NamedExec同理，这里是支持查询。
+*/
+
+func namedQuery() {
+	sqlStr := "SELECT * FROM user WHERE name=:name"
+	// 使用map做命名查询
+	rows, err := dbsqlxuse.NamedQuery(sqlStr, map[string]interface{}{"name": "七米"})
+	if err != nil {
+		fmt.Printf("db.NamedQuery failed, err:%v\n", err)
+		return
+	}
+	defer rows.Close()
+	for rows.Next() {
+		var u usersqlx
+		err := rows.StructScan(&u)
+		if err != nil {
+			fmt.Printf("scan failed, err:%v\n", err)
+			continue
+		}
+		fmt.Printf("user:%#v\n", u)
+	}
+
+	u := usersqlx{
+		Name: "七米",
+	}
+	// 使用结构体命名查询，根据结构体字段的 db tag进行映射
+	rows, err = dbsqlxuse.NamedQuery(sqlStr, u)
+	if err != nil {
+		fmt.Printf("db.NamedQuery failed, err:%v\n", err)
+		return
+	}
+	defer rows.Close()
+	for rows.Next() {
+		var u usersqlx
+		err := rows.StructScan(&u)
+		if err != nil {
+			fmt.Printf("scan failed, err:%v\n", err)
+			continue
+		}
+		fmt.Printf("user:%#v\n", u)
+	}
+}
+
 func main() {
 	if err := initDBsqlxuse(); err != nil {
 		fmt.Println(err)
@@ -116,5 +176,7 @@ func main() {
 
 	// updateRowDemosqlx() //更新
 
-	deleteRowDemosqlx() //删除
+	// deleteRowDemosqlx() //删除
+
+	insertUserDemo() //
 }
