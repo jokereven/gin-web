@@ -114,7 +114,7 @@ func deleteRowDemo() {
 	fmt.Printf("delete success, affected rows:%d\n", n)
 }
 
-func main() {
+func main_add_del_change_find() {
 
 	if err := initDBMYSQL(); err != nil {
 		fmt.Printf("connect to the db failed, err:%v", err)
