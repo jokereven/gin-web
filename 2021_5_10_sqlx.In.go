@@ -97,7 +97,7 @@ func QueryAndOrderByIDs(ids []int) (users []User, err error) {
 	return
 }
 
-func main() {
+func main_sqlx_in() {
 	if err := initDBsqlxin(); err != nil {
 		fmt.Println(err)
 		return
