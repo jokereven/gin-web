@@ -85,7 +85,7 @@ func watchpipe() {
 	}
 	fmt.Println("sucess...")
 }
-func main() {
+func main_pipwline_watch() {
 	err := initClientpipeline() //连接redis数据库
 	if err != nil {
 		fmt.Printf("go connect redis err:%v\n", err)

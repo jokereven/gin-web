@@ -8,4 +8,5 @@ require (
 	github.com/go-sql-driver/mysql v1.6.0
 	github.com/jmoiron/sqlx v1.3.3
 	github.com/onsi/gomega v1.12.0 // indirect
+	go.uber.org/zap v1.16.0
 )
