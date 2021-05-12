@@ -34,14 +34,14 @@ var logger *zap.Logger
 
 var sugarLogger *zap.SugaredLogger
 
-func main() {
-	InitLogger()
+func main_zap() {
+	InitLogger_zap()
 	defer logger.Sync()
 	simpleHttpGet("www.baidu.com")
 	simpleHttpGet("http://www.baidu.com")
 }
 
-func InitLogger() {
+func InitLogger_zap() {
 	logger, _ = zap.NewProduction()
 	sugarLogger = logger.Sugar()
 }
