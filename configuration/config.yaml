@@ -1,0 +1,5 @@
+port: 8080
+version: 'v0.0.8'
+
+mysql:
+  host: 127.0.0.1
