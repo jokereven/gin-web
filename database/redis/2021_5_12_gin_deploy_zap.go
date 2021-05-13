@@ -19,6 +19,17 @@ var logger_gin *zap.Logger
 
 var sugarLogger_gin *zap.SugaredLogger
 
+func main_gin_zap() {
+	// r := gin.Default()
+	InitLogger_gin() //初始化
+	r := gin.New()   //创造一个空的路由
+	r.Use(GinLogger(logger_gin), GinRecovery(logger_gin, true))
+	r.GET("/hello", func(c *gin.Context) {
+		c.String(http.StatusOK, "hello liwenzhou.com!")
+	})
+	r.Run()
+}
+
 func InitLogger_gin() {
 	writeSyncer := getLogWriter_gin()
 	encoder := getEncoder_gin()
@@ -137,15 +148,4 @@ func GinRecovery(logger *zap.Logger, stack bool) gin.HandlerFunc {
 		}()
 		c.Next()
 	}
-}
-
-func main() {
-	// r := gin.Default()
-	InitLogger_gin() //初始化
-	r := gin.New()   //创造一个空的路由
-	r.Use(GinLogger(logger_gin), GinRecovery(logger_gin, true))
-	r.GET("/hello", func(c *gin.Context) {
-		c.String(http.StatusOK, "hello liwenzhou.com!")
-	})
-	r.Run()
 }
