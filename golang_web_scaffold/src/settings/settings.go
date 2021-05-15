@@ -50,9 +50,10 @@ type RedisConfig struct {
 	DB       int    `mapstructure:"db"`
 }
 
-func Init() (err error) {
-	viper.SetConfigName("config")
-	viper.SetConfigFile("./config.yaml")
+func Init(filepath string) (err error) {
+	// viper.SetConfigName("config")
+	// viper.SetConfigFile("./config.yaml") //配置文件的位置 相对于可执行文件的位置(即相当于main.go的位置)
+	viper.SetConfigFile(filepath)
 	err = viper.ReadInConfig() // 读取配置文件信息
 	if err != nil {            // 读取配置信息失败
 		fmt.Printf("viper.ReadInConfig() error:%v", err)
