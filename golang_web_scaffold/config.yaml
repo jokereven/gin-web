@@ -1,10 +1,11 @@
-# app
+# appconfig
 app:
   app_name: 'golang_web'
   mod: 'dev'
   port: 3000
+  version: '0.0.1'
 
-#log
+#logconfig
 log:
   level: 'debug'
   file_name: 'golang_web.log'
@@ -27,3 +28,4 @@ redis:
   host: '127.0.0.1'
   port: 6379
   db: 0
+  password: ''

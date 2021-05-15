@@ -33,3 +33,18 @@
 {"level":"DEBUG","time":"2021-05-15T16:42:29.003+0800","caller":"golang_web_scaffold/main.go:37","msg":"logger init sucess..."}
 {"level":"INFO","time":"2021-05-15T16:43:34.636+0800","caller":"golang_web_scaffold/main.go:74","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2021-05-15T16:43:34.642+0800","caller":"golang_web_scaffold/main.go:83","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-15T20:24:07.097+0800","caller":"golang_web_scaffold/main.go:37","msg":"logger init sucess..."}
+{"level":"DEBUG","time":"2021-05-15T21:01:38.885+0800","caller":"golang_web_scaffold/main.go:37","msg":"logger init sucess..."}
+{"level":"ERROR","time":"2021-05-15T21:01:38.935+0800","caller":"mysql/mysql.go:18","msg":"connect DB failed","error":"dial tcp: lookup tcp/cfg.port: getaddrinfow: The specified class was not found."}
+{"level":"DEBUG","time":"2021-05-15T21:03:34.064+0800","caller":"golang_web_scaffold/main.go:37","msg":"logger init sucess..."}
+{"level":"ERROR","time":"2021-05-15T21:03:34.097+0800","caller":"mysql/mysql.go:18","msg":"connect DB failed","error":"dial tcp: lookup tcp/cfg.port: getaddrinfow: The specified class was not found."}
+{"level":"DEBUG","time":"2021-05-15T21:06:12.354+0800","caller":"golang_web_scaffold/main.go:37","msg":"logger init sucess..."}
+{"level":"ERROR","time":"2021-05-15T21:06:12.398+0800","caller":"mysql/mysql.go:18","msg":"connect DB failed","error":"dial tcp: lookup tcp/cfg.port: getaddrinfow: The specified class was not found."}
+{"level":"DEBUG","time":"2021-05-15T21:11:07.286+0800","caller":"golang_web_scaffold/main.go:37","msg":"logger init sucess..."}
+{"level":"ERROR","time":"2021-05-15T21:11:07.330+0800","caller":"mysql/mysql.go:18","msg":"connect DB failed","error":"dial tcp: lookup tcp/cfg.Port: getaddrinfow: The specified class was not found."}
+{"level":"DEBUG","time":"2021-05-15T21:12:58.877+0800","caller":"golang_web_scaffold/main.go:37","msg":"logger init sucess..."}
+{"level":"ERROR","time":"2021-05-15T21:12:58.921+0800","caller":"mysql/mysql.go:17","msg":"connect DB failed","error":"dial tcp: lookup tcp/cfg.Port: getaddrinfow: The specified class was not found."}
+{"level":"DEBUG","time":"2021-05-15T21:27:57.679+0800","caller":"golang_web_scaffold/main.go:37","msg":"logger init sucess..."}
+{"level":"DEBUG","time":"2021-05-15T21:28:47.032+0800","caller":"golang_web_scaffold/main.go:37","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-15T21:28:49.502+0800","caller":"golang_web_scaffold/main.go:74","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-15T21:28:49.506+0800","caller":"golang_web_scaffold/main.go:83","msg":"Server exiting"}

@@ -29,14 +29,14 @@ func main() {
 		return
 	}
 	//2. 初始化配置文件
-	if err := logger.Init(); err != nil {
+	if err := logger.Init(settings.Conf.LogConfig); err != nil {
 		fmt.Printf("init logger file ,err:%v", err)
 		return
 	}
 	defer zap.L().Sync() //延迟注册
 	zap.L().Debug("logger init sucess...")
 	//3. 初始化MySQL连接
-	if err := mysql.Init(); err != nil {
+	if err := mysql.Init(); err != nil { //通过全局变量获取
 		fmt.Printf("init mysql file ,err:%v", err)
 		return
 	}

@@ -9,9 +9,9 @@ import (
 	"strings"
 	"time"
 
+	"gitee.com/jokereven/golang_web_scaffold/src/settings"
 	"github.com/gin-gonic/gin"
 	"github.com/natefinch/lumberjack"
-	"github.com/spf13/viper"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 )
@@ -19,11 +19,11 @@ import (
 var lg *zap.Logger
 
 // Init 初始化Logger
-func Init() (err error) {
-	writeSyncer := getLogWriter(viper.GetString("log.file_name"), viper.GetInt("log.max_size"), viper.GetInt("log.max_age"), viper.GetInt("log.max_backups"))
+func Init(cfg *settings.LogConfig) (err error) {
+	writeSyncer := getLogWriter(cfg.Filename, cfg.MaxAge, cfg.MaxAge, cfg.MaxBackups)
 	encoder := getEncoder()
 	var l = new(zapcore.Level)
-	err = l.UnmarshalText([]byte(viper.GetString("log.level")))
+	err = l.UnmarshalText([]byte(cfg.Level))
 	if err != nil {
 		return
 	}
