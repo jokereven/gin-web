@@ -18,12 +18,12 @@ import (
 
 var lg *zap.Logger
 
-// InitLogger 初始化Logger
+// Init 初始化Logger
 func Init() (err error) {
 	writeSyncer := getLogWriter(viper.GetString("log.file_name"), viper.GetInt("log.max_size"), viper.GetInt("log.max_age"), viper.GetInt("log.max_backups"))
 	encoder := getEncoder()
 	var l = new(zapcore.Level)
-	err = l.UnmarshalText([]byte("log.Level"))
+	err = l.UnmarshalText([]byte(viper.GetString("log.level")))
 	if err != nil {
 		return
 	}

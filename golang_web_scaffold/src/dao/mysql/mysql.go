@@ -3,7 +3,7 @@ package mysql
 import (
 	"fmt"
 
-	_ "github.com/go-sql-driver/mysql"
+	_ "github.com/go-sql-driver/mysql" //init()匿名导入
 	"github.com/jmoiron/sqlx"
 	"github.com/spf13/viper"
 	"go.uber.org/zap"
@@ -12,9 +12,9 @@ import (
 var db *sqlx.DB
 
 func Init() (err error) {
-	dsn := fmt.Sprintf("%s:%s(%s:%d)/%s?charset=utf8mb4&parseTime=True",
+	dsn := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8mb4&parseTime=True",
 		viper.GetString("mysql.user"),
-		viper.GetString("mysql.passwd"),
+		viper.GetString("mysql.password"),
 		viper.GetString("mysql.host"),
 		viper.GetInt("mysql.port"),
 		viper.GetString("mysql.db_name"),

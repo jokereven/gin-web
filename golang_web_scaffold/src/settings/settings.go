@@ -9,7 +9,7 @@ import (
 
 func Init() (err error) {
 	viper.SetConfigName("config")
-	viper.SetConfigFile("config.yaml")
+	viper.SetConfigFile("./config.yaml")
 	err = viper.ReadInConfig() // 读取配置文件信息
 	if err != nil {            // 读取配置信息失败
 		fmt.Printf("viper.ReadInConfig() error:%v", err)
