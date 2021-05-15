@@ -1,0 +1,29 @@
+# app
+app:
+  app_name: 'golang_web'
+  mod: 'dev'
+  port: 3000
+
+#log
+log:
+  leval: 'debug'
+  file_name: 'golang_web.log'
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+
+#mysql
+mysql:
+  host: '127.0.0.1'
+  port: 13306
+  user: 'root'
+  password: 'root'
+  db_name: 'sql_dome'
+  mysql.max_open_conns: 200
+  mysql.max_idle_conns: 20
+
+#redis
+redis:
+  host: '127.0.0.1'
+  port: 16379
+  db: 0
