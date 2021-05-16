@@ -13,10 +13,11 @@ var Conf = new(AppConfig)
 
 // AppConfig ...
 type AppConfig struct {
-	Name    string `mapstructure:"app_name"`
-	Mode    string `mapstructure:"mod"`
-	Version string `mapstructure:"version"`
-
+	Name         string `mapstructure:"app_name"`
+	Mode         string `mapstructure:"mod"`
+	Version      string `mapstructure:"version"`
+	StartTime    string `mapstructure:"starttime"`
+	MachineID    int64  `mapstructure:"machineid"`
 	*LogConfig   `mapstructure:"log"`
 	*MySQLConfig `mapstructure:"mysql"`
 	*RedisConfig `mapstructure:"redis"`

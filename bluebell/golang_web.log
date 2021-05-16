@@ -1,0 +1,4 @@
+{"level":"DEBUG","time":"2021-05-16T13:38:09.317+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"DEBUG","time":"2021-05-16T13:45:20.467+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"DEBUG","time":"2021-05-16T13:45:40.739+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"DEBUG","time":"2021-05-16T13:45:42.905+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}

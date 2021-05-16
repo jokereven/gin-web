@@ -11,6 +11,8 @@ import (
 	"syscall"
 	"time"
 
+	"gitee.com/jokereven/bluebell/src/pck/snowflake"
+
 	"gitee.com/jokereven/bluebell/src/dao/mysql"
 	"gitee.com/jokereven/bluebell/src/dao/redis"
 	"gitee.com/jokereven/bluebell/src/logger"
@@ -56,9 +58,17 @@ func main() {
 		return
 	}
 	defer redis.Close()
-	//5. 注册路由
+
+	//雪花❄算法snowflake初始化
+	// 5、初始化ID生成器
+	if err := snowflake.Init(settings.Conf.StartTime, settings.Conf.MachineID); err != nil {
+		fmt.Printf("init snowflakeID failed, err:%v\n", err)
+		return
+	}
+
+	//6. 注册路由
 	r := routes.Setup()
-	//6. 启动服务(幽雅关机)
+	//7. 启动服务(幽雅关机)
 
 	srv := &http.Server{
 		Addr:    fmt.Sprintf(":%d", viper.GetInt("app.port")),

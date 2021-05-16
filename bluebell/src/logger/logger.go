@@ -9,7 +9,8 @@ import (
 	"strings"
 	"time"
 
-	"gitee.com/jokereven/golang_web_scaffold/src/settings"
+	"gitee.com/jokereven/bluebell/src/settings"
+
 	"github.com/gin-gonic/gin"
 	"github.com/natefinch/lumberjack"
 	"go.uber.org/zap"

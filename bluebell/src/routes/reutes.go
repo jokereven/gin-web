@@ -3,7 +3,7 @@ package routes
 import (
 	"net/http"
 
-	"gitee.com/jokereven/golang_web_scaffold/src/logger"
+	"gitee.com/jokereven/bluebell/src/logger"
 
 	"github.com/gin-gonic/gin"
 )
