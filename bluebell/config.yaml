@@ -4,8 +4,8 @@ app:
   mod: 'dev'
   port: 3000
   version: '0.0.1'
-  starttime: '2021-5-16'
-  machineid: 1
+  start_time: '2020-12-15'
+  machine_id: 1
 
 #logconfig
 log:

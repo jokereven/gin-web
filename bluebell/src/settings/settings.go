@@ -9,15 +9,15 @@ import (
 
 //使用结构体变量保存结构体信息
 // Conf ... 全局变量，用来保存程序的所有配置信息
-var Conf = new(AppConfig)
+var Conf = new(Config)
 
 // AppConfig ...
-type AppConfig struct {
+type Config struct {
 	Name         string `mapstructure:"app_name"`
 	Mode         string `mapstructure:"mod"`
 	Version      string `mapstructure:"version"`
-	StartTime    string `mapstructure:"starttime"`
-	MachineID    int64  `mapstructure:"machineid"`
+	StartTime    string `mapstructure:"start_time"`
+	MachineID    int64  `mapstructure:"machine_id"`
 	*LogConfig   `mapstructure:"log"`
 	*MySQLConfig `mapstructure:"mysql"`
 	*RedisConfig `mapstructure:"redis"`

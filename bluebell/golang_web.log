@@ -1,4 +1,4 @@
-{"level":"DEBUG","time":"2021-05-16T13:38:09.317+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
-{"level":"DEBUG","time":"2021-05-16T13:45:20.467+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
-{"level":"DEBUG","time":"2021-05-16T13:45:40.739+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
-{"level":"DEBUG","time":"2021-05-16T13:45:42.905+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"DEBUG","time":"2021-05-16T20:31:17.439+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"DEBUG","time":"2021-05-16T20:33:28.984+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-16T20:35:18.493+0800","caller":"bluebell/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-16T20:35:18.498+0800","caller":"bluebell/main.go:103","msg":"Server exiting"}

@@ -62,8 +62,9 @@ func main() {
 	//雪花❄算法snowflake初始化
 	// 5、初始化ID生成器
 	if err := snowflake.Init(settings.Conf.StartTime, settings.Conf.MachineID); err != nil {
-		fmt.Printf("init snowflakeID failed, err:%v\n", err)
-		return
+		// fmt.Printf("init snowflakeID failed, err:%v\n", err)
+		fmt.Println(err)
+		// return
 	}
 
 	//6. 注册路由
