@@ -48,3 +48,15 @@
 {"level":"DEBUG","time":"2021-05-15T21:28:47.032+0800","caller":"golang_web_scaffold/main.go:37","msg":"logger init sucess..."}
 {"level":"INFO","time":"2021-05-15T21:28:49.502+0800","caller":"golang_web_scaffold/main.go:74","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2021-05-15T21:28:49.506+0800","caller":"golang_web_scaffold/main.go:83","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-15T21:33:45.087+0800","caller":"golang_web_scaffold/main.go:37","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-15T21:33:49.219+0800","caller":"golang_web_scaffold/main.go:74","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-15T21:33:49.219+0800","caller":"golang_web_scaffold/main.go:83","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-15T21:53:16.829+0800","caller":"golang_web_scaffold/main.go:37","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-15T21:53:18.627+0800","caller":"golang_web_scaffold/main.go:74","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-15T21:53:18.634+0800","caller":"golang_web_scaffold/main.go:83","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-15T22:53:59.907+0800","caller":"golang_web_scaffold/main.go:42","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-15T22:54:02.101+0800","caller":"golang_web_scaffold/main.go:79","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-15T22:54:02.131+0800","caller":"golang_web_scaffold/main.go:88","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-15T22:55:38.422+0800","caller":"golang_web_scaffold/main.go:46","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-15T22:55:42.764+0800","caller":"golang_web_scaffold/main.go:83","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-15T22:55:42.781+0800","caller":"golang_web_scaffold/main.go:92","msg":"Server exiting"}

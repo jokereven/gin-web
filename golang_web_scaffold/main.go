@@ -2,6 +2,7 @@ package main
 
 import (
 	"context"
+	"flag"
 	"fmt"
 	"log"
 	"net/http"
@@ -23,8 +24,16 @@ import (
 //Go web 比较通用的模板脚手架
 
 func main() {
+	if len(os.Args) < 2 {
+		fmt.Println("输入无效...请输入 可执行文件+filepath")
+		return
+	}
+
+	var path string
+	flag.StringVar(&path, "path", "config.yaml", "the_path")
+
 	//1. 加载配置文件
-	if err := settings.Init(); err != nil {
+	if err := settings.Init(path); err != nil {
 		fmt.Printf("init settings file ,err:%v", err)
 		return
 	}
