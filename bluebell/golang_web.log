@@ -35,3 +35,6 @@
 {"level":"DEBUG","time":"2021-05-17T20:40:58.663+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
 {"level":"INFO","time":"2021-05-17T20:40:58.776+0800","caller":"bluebell/main.go:94","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2021-05-17T20:40:58.780+0800","caller":"bluebell/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-17T21:02:55.883+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-17T21:02:57.667+0800","caller":"bluebell/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-17T21:02:57.679+0800","caller":"bluebell/main.go:103","msg":"Server exiting"}
