@@ -2,3 +2,36 @@
 {"level":"DEBUG","time":"2021-05-16T20:33:28.984+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
 {"level":"INFO","time":"2021-05-16T20:35:18.493+0800","caller":"bluebell/main.go:94","msg":"Shutdown Server ..."}
 {"level":"INFO","time":"2021-05-16T20:35:18.498+0800","caller":"bluebell/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-17T20:40:33.264+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-17T20:40:40.352+0800","caller":"bluebell/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-17T20:40:40.365+0800","caller":"bluebell/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-17T20:40:44.283+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-17T20:40:45.694+0800","caller":"bluebell/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-17T20:40:45.706+0800","caller":"bluebell/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-17T20:40:46.564+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-17T20:40:47.333+0800","caller":"bluebell/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-17T20:40:47.337+0800","caller":"bluebell/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-17T20:40:47.904+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-17T20:40:48.048+0800","caller":"bluebell/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-17T20:40:48.052+0800","caller":"bluebell/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-17T20:40:51.091+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-17T20:40:51.798+0800","caller":"bluebell/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-17T20:40:51.802+0800","caller":"bluebell/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-17T20:40:52.908+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-17T20:40:53.607+0800","caller":"bluebell/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-17T20:40:53.612+0800","caller":"bluebell/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-17T20:40:54.466+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-17T20:40:55.104+0800","caller":"bluebell/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-17T20:40:55.110+0800","caller":"bluebell/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-17T20:40:55.890+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-17T20:40:56.416+0800","caller":"bluebell/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-17T20:40:56.419+0800","caller":"bluebell/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-17T20:40:56.987+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-17T20:40:57.381+0800","caller":"bluebell/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-17T20:40:57.391+0800","caller":"bluebell/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-17T20:40:57.872+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-17T20:40:58.109+0800","caller":"bluebell/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-17T20:40:58.109+0800","caller":"bluebell/main.go:103","msg":"Server exiting"}
+{"level":"DEBUG","time":"2021-05-17T20:40:58.663+0800","caller":"bluebell/main.go:48","msg":"logger init sucess..."}
+{"level":"INFO","time":"2021-05-17T20:40:58.776+0800","caller":"bluebell/main.go:94","msg":"Shutdown Server ..."}
+{"level":"INFO","time":"2021-05-17T20:40:58.780+0800","caller":"bluebell/main.go:103","msg":"Server exiting"}
